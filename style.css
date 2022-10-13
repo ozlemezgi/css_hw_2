@@ -1,16 +1,16 @@
 
 .item1 { grid-area: logo;}
-.item2 { 
+.item2 {
     grid-area: searchBar;
     background-color: rgb(170, 170, 174);
 }
-.item3 { grid-area: box1;float: left; 
+.item3 { grid-area: box1;float: left;
     background-color: rgb(177, 230, 232);
 
 }
 .item4 { grid-area: box2; float: left;
     background-color: rgb(120, 243, 239);
-    
+
 }
 .item5 { grid-area: box3;
     background-color: rgb(47, 168, 192);
@@ -26,24 +26,28 @@
 
 }
 
+/* container */
 .grid-container {
     display: grid;
+    /* gridi altıya böldük */
     grid-template-areas:
       'logo logo logo logo logo logo'
       'searchBar searchBar searchBar searchBar searchBar searchBar'
       'box1 box1 box2 box3 box3 box3'
       'footer footer footer footer footer footer';
       ;
-    
+
     gap: 5px;
     background-color: #ffffff;
     padding: 10px;
-  } 
+  }
 
+
+/* inside of the container */
   .grid-container > div {
     /* background-color: rgb(255, 255, 255); */
     text-align: center;
     padding: 10px 0;
     font-size: 12px;
-   
+
   }
